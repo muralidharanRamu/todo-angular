@@ -1,0 +1,26 @@
+.side-navbar {
+    background-color: #e7e7e79d;
+    overflow-x: hidden;
+    ul {
+        list-style: none;
+        padding: 0;
+        width: 318px;
+        .category-container {
+            display: flex;
+            padding: 7px 16px;
+            font-size: 15px;
+            .category-icon-container {
+                height: 20px;
+                width: 20px;
+                text-align: center;
+            }
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.781);
+            }
+        }
+    }
+}
+
+.toggled {
+    width: 17%;
+}

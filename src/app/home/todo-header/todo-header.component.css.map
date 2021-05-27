@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACJ,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,OAAO;CAK5B;;AAPD,AAGI,OAHG,CAGH,EAAE,CAAC;EACC,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "todo-header.component.scss"
+    ],
+    "names": [],
+    "file": "todo-header.component.css"
+}

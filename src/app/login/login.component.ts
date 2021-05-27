@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { User } from '../model/user';
-import { AuthenticationService } from '../service/authentication.service';
+import { User } from '../shared/model/user';
+import { AuthenticationService } from '../shared/service/authentication.service';
 
 @Component({
   selector: 'app-login',
@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     const user = new User(this.loginForm.value.email, this.loginForm.value.password);
     if (this.authencationService.authenticate(user)) {
-      this.router.navigate(['home']);
+      this.router.navigate(['']);
     }
   }
 }

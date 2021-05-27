@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+input[type="text"] {
+    background-color: transparent;
+    border: 0;
+    &:focus {
+        outline: 0;
+    }
+}

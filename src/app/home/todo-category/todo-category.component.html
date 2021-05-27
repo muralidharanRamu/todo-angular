@@ -1,0 +1,26 @@
+<div class="side-navbar h-100" [ngClass]="{'toggled': isToggledCategoryList}">
+    <div class="toggle-btn-container p-2">
+        <button type="button" class="btn btn-light" (click)="toggleCategoryList()">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+    </div>
+    <ul>
+        <li *ngFor="let todoList of todoLists">
+            <div class="category-container">
+                <span class="category-icon-container mx-1">
+                    <i class={{todoList.getIcon()}}></i>
+                </span>
+                <span class="category-title-container container-fluid user-select-none">{{todoList.getTitle()}}</span>
+                <span class="task-count-container" *ngIf="todoList.getTasks().length != 0">{{todoList.getTasks().length}}</span>
+            </div>
+        </li>
+        <li>
+            <div class="category-container">
+                <span class="category-icon-container mx-1">
+                    <i class="fas fa-plus"></i>
+                </span>
+                <input class="container-fluid" placeholder="New List" type="text" (keydown.enter)="addNewList($event)">
+            </div>
+        </li>
+    </ul>
+</div>

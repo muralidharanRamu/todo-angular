@@ -1,0 +1,10 @@
+.navbar {
+  height: 50px;
+  background-color: #346fef;
+}
+
+.navbar h6 {
+  margin: 3px;
+  color: white;
+}
+/*# sourceMappingURL=todo-header.component.css.map */
